@@ -1,0 +1,25 @@
+<div class="pokemon-card">
+    @if(isFav()) {
+        <button class="favs-button" (click)="handleRemove()">remove from favs</button>
+    } @else {
+        <button class="favs-button" (click)="handleAdd()">add to favs</button>
+    }
+    <h2 class="pokemon-name">{{pokemon().species.name}}</h2>
+
+    <img [src]="pokemon().sprites.front_default" alt="Pokemon" />
+    <div class="field">
+        <label>Height:</label>
+        <p>{{pokemon().height}}</p>
+    </div>
+    <div class="field">
+        <label>Weight:</label>
+        <p>{{pokemon().weight}}</p>
+    </div>
+    <h3 class="types-heading">Types</h3>
+    <ul>
+        @for(type of pokemon().types; track $index) {
+        <li class="pokemon-type">{{type.type.name}}</li>
+        }
+    </ul>
+
+</div>

@@ -1,0 +1,5 @@
+<ul class="cards-container">   
+        @for(p of pokemonFavs(); track $index) {
+            <app-pokemon-card [pokemon]="p"/>
+        }
+</ul>

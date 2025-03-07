@@ -1,0 +1,29 @@
+header {
+    background-color: #F9A966;
+    padding: 1rem;
+    font-family: 'LexendDeca';
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        font-weight: 500;
+
+        li {
+            color: black;
+            font-size: x-large;            
+            letter-spacing: 0.06rem;
+            transition: ease-out 200ms;
+            
+            &:hover {
+                cursor: pointer;
+                color: #787878;
+            }
+        }
+    }
+}
+
+.link-active {
+    font-weight: 700;
+    color: white !important;    
+}

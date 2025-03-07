@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'LexendDeca';
+    src: url('./assets/fonts/LexendDeca-VariableFont_wght.ttf') format('truetype');
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {    
+    background-color: #FFEEB0;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}

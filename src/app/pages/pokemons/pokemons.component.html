@@ -1,0 +1,15 @@
+<h2>Select a Pokemon!</h2>
+
+<ul>
+    @if(isLoading()) {
+        <p class="loading">Cargando...</p>
+    } @else if (isError()) {
+        <p class="error">Lo sentimos, algo falló al intentar mostrar la lista.</p>
+    } @else {
+        @for(p of pokemonData()?.results; track $index) {
+            <app-pokemon-item [pokemonURL]="p.url" />
+        }
+    } 
+</ul>
+
+<app-pagination [pages]="pages()" (pageToGo)="updatePage($event)" />

@@ -1,0 +1,23 @@
+* {
+    font-family: 'LexendDeca';
+}
+
+div {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-inline: auto;
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: large;
+    font-weight: 500;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

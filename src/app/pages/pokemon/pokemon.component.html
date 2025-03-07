@@ -1,0 +1,7 @@
+
+<div class="pokemon-wrapper">
+    <button (click)="goBack()">go back</button>
+    @if(pokemon()) {
+        <app-pokemon-card [pokemon]="pokemon()!" />
+    }
+</div>

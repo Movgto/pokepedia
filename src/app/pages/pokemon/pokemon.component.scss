@@ -1,0 +1,27 @@
+* {
+    font-family: 'LexendDeca';
+}
+
+button {
+    background-color: transparent;
+    font-size: large;
+    font-weight: 700;
+    border-color: transparent;
+    align-self: flex-start;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.pokemon-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;  
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 720px;
+    margin: 4rem auto 0 auto;
+    gap: 2rem;    
+}

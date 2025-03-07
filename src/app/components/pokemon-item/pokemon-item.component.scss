@@ -1,0 +1,22 @@
+li {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;           
+    // background-color: antiquewhite;
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        aspect-ratio: 4/4;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #c2ad6252;
+    }
+}

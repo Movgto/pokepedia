@@ -1,0 +1,9 @@
+<div>
+    @if(pokemonService.currentPage() > 0) {
+        <button (click)="goToPage(pokemonService.currentPage() - 1)">previous</button>
+    }
+    <p>page {{pokemonService.currentPage()}} / {{pokemonService.count()}}</p>
+    @if(pokemonService.currentPage() < pages()) {
+        <button (click)="goToPage(pokemonService.currentPage() + 1)">next</button>
+    }    
+</div>
